@@ -62,4 +62,4 @@ jobs:
 
           git add .
           git commit -m "GitHub Actions at `date +"%Y-%m-%d %H:%M:%S"`"
-          git push "https://${{ secrets.ACCESS_TOKEN }}@$GITHUB_REPO" origin main:pages
+          git push "https://${{ secrets.ACCESS_TOKEN }}@$GITHUB_REPO" main:pages
