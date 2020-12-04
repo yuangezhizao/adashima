@@ -33,7 +33,7 @@ jobs:
       - name: Run a multi-line script
         run: |
           echo Start
-          df -ls
+          df -l
           free -m
           pwd
           ls -la
