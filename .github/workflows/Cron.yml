@@ -55,7 +55,6 @@ jobs:
           
           cd adashima
           mv ../.git .git
-          mv ../.github .github
           
           git config user.name "yuangezhizao-serveraccount"
           git config user.email "yuangezhizao@gmail.com"
