@@ -29,21 +29,23 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Checkout
         uses: actions/checkout@v2
-
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
-        run: |
-          echo Start
-          df -l
-          free -m
-          pwd
-          ls -la
-
+        
       # Debug
-      - name: Debug
-        run: |
-          wget --help
+      - name: wget --version
+        run: wget --version
+    
+      - name: df -l
+        run: df -l
       
+      - name: free -m
+        run: free -m
+    
+      - name: pwd
+        run: pwd
+        
+      - name: ls -la
+        run: ls -la
+              
       # Execute
       - name: Execute
         env: 
@@ -53,10 +55,11 @@ jobs:
           
           cd adashima
           mv ../.git .git
+          mv ../.github .github
           
           git config user.name "yuangezhizao-serveraccount"
           git config user.email "yuangezhizao@gmail.com"
 
           git add .
           git commit -m "GitHub Actions at `date +"%Y-%m-%d %H:%M:%S"`"
-          git push "https://${{ secrets.ACCESS_TOKEN }}@$GITHUB_REPO" origin pages
+          git push "https://${{ secrets.ACCESS_TOKEN }}@$GITHUB_REPO" origin main:pages
