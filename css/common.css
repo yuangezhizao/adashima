@@ -708,6 +708,18 @@ p.pgt a, p.pgt span {
 	.top-logo img{
 		width: 100%;
 	}
+	.top-banner-event{
+		width: 25%;
+		position: absolute;
+		left: 5%;
+		top: 10%;
+	}
+	.top-banner-event img{
+		width: 100%;
+	}
+	.top-banner-sp{
+		display: none;
+	}
 	.top-update-area{
 		width: 760px;
 		margin: 0 auto 100px;
@@ -822,13 +834,20 @@ p.pgt a, p.pgt span {
 	.top-logo img{
 		width: 100%;
 	}
+	.top-banner-event{
+		display: none;
+	}
 	.top-onair-sp{
 		width: 80%;
 		margin: 0 auto 2em;
 	}
 	.top-banner-sp{
 		width: 100%;
-		margin: 0 auto 2.5em;
+		margin: 0 auto 1.5em;
+	}
+	.top-banner-event-sp{
+		width: 100%;
+		margin: 0 auto 1.5em;
 	}
 	.h2-top-update-sp,
 	.h2-top-twitter-sp{
@@ -837,6 +856,7 @@ p.pgt a, p.pgt span {
 	}
 	.top-onair-sp img,
 	.top-banner-sp img,
+	.top-banner-event-sp img,
 	.h2-top-update-sp img,
 	.h2-top-twitter-sp img{
 		width: 100%;
