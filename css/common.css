@@ -1109,12 +1109,24 @@ p.pgt a, p.pgt span {
 	padding-bottom: 0.2em;
 	border-bottom: 1px solid #8238bb; 
 }
-.news-text{
+.news-text,
+.news-text-caution{
 	color: #444444;
 	margin-bottom: 1.5em;
 }
 .news-img img{
 	width:100%;
+}
+.size-table{
+	color: #444444;
+	border: 1px solid #444444;
+	font-size: 0.8em;
+	margin-bottom: 1em;
+}
+.size-table td{
+	color: #444444;
+	border: 1px solid #444444;
+	padding: 0.2em 0.5em;
 }
 
 
@@ -1181,8 +1193,16 @@ p.pgt a, p.pgt span {
 		font-size: 14px;
 		line-height: 24px;
 	}
+	.news-text-caution{
+		font-size: 10px;
+		line-height: 20px;
+	}
 	.news-img{
 		width:540px;
+		margin: 1em auto 2em;
+	}
+	.news-img-small{
+		width:270px;
 		margin: 1em auto 2em;
 	}
 	.btn-back{
@@ -1259,6 +1279,10 @@ p.pgt a, p.pgt span {
 	.news-text{
 		font-size: 0.9em;
 		line-height: 1.5em;
+	}
+	.news-text-caution{
+		font-size: 0.7em;
+		line-height: 1.4em;
 	}
 	.news-img{
 		width:100%;
