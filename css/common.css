@@ -111,6 +111,13 @@ img{
 .serif{
 	font-family : '游明朝体', 'Yu Mincho', YuMincho, 'Hiragino Mincho Pro', 'ヒラギノ明朝 Pro W3', 'ＭＳ Ｐ明朝', 'Times', 'Times New Roman', serif ;
 }
+.news-text a:link{color: #8238bb; text-decoration:underline;}
+.news-text a:visited{color: #8238bb; text-decoration:underline;}
+.news-text a:active{color: #8238bb; text-decoration:underline;}
+.news-text a:hover{color: #8238bb; text-decoration:underline;}
+img{
+	vertical-align:bottom;
+}
 
 @media all and (min-width: 768px) {
 	.br-pc {
@@ -308,7 +315,7 @@ p.pgt a, p.pgt span {
 		font-weight: bold;
 	}
 	.footer-onair{
-		font-size:2.7em;
+		font-size:2.5em;
 		margin: 0.1em auto 0.2em;
 		font-weight: 100;
 		letter-spacing: -0.03em;
@@ -607,10 +614,24 @@ p.pgt a, p.pgt span {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b486db', endColorstr='#e0acb4',GradientType=0 ); /* IE6-9 */
 	position: relative;
 }
+#top-caution-block{
+    width:100%;
+    background:#ff7f7f;
+}
+#top-caution-block a{
+    text-align:center;
+    font-weight:bold;
+}
+
 .update-text a:link{color:#444444; text-decoration:none}
 .update-text a:visited{color:#444444; text-decoration:none}
 .update-text a:active{color:#444444; text-decoration:none}
 .update-text a:hover{color:#444444; text-decoration:underline;}
+
+#top-caution-block a:link{color:#ffffff; text-decoration:none}
+#top-caution-block a:visited{color:#ffffff; text-decoration:none}
+#top-caution-block a:active{color:#ffffff; text-decoration:none}
+#top-caution-block a:hover{color:#ffffff; text-decoration:underline;}
 
 @media all and (min-width: 768px) {
 	#wrapper{
@@ -620,6 +641,11 @@ p.pgt a, p.pgt span {
 	
 	/* SECTION */
 	
+	#top-caution-block{
+        font-size: 30px;
+        text-align:center;
+        padding:10px 0;
+    }
 	#sidebar-top{
 		width: 240px;
 		position: relative;
@@ -722,7 +748,7 @@ p.pgt a, p.pgt span {
 		width: 100%;
 	}
 	.top-banner-event{
-		width: 25%;
+		width: 22%;
 		position: absolute;
 		left: 5%;
 		top: 10%;
@@ -799,7 +825,11 @@ p.pgt a, p.pgt span {
 @media all and (max-width: 767px) {
 	
 	/* SECTION */
-	
+	#top-caution-block{
+        font-size: 1em;
+        text-align:center;
+        padding:0.2em 0;
+    }
 	#sidebar-top{
 		display: none;
 	}
@@ -852,15 +882,15 @@ p.pgt a, p.pgt span {
 	}
 	.top-onair-sp{
 		width: 80%;
-		margin: 0 auto 2em;
+		margin: 0.5em auto 2em;
 	}
 	.top-banner-sp{
 		width: 100%;
 		margin: 0 auto 1.5em;
 	}
 	.top-banner-event-sp{
-		width: 100%;
-		margin: 0 auto 1.5em;
+		width: 103%;
+		margin: 0 0 1.5em -1.5%;
 	}
 	.h2-top-update-sp,
 	.h2-top-twitter-sp{
@@ -2699,6 +2729,3 @@ img{
 	-moz-touch-callout:none;
 	-moz-user-select:none;
 }
-
-
-
